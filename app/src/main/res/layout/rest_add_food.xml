@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_foodImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/restaurant" />
+
+    <EditText
+        android:id="@+id/et_foodName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/iv_foodImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_shape"
+        android:drawableStart="@drawable/ic_food"
+        android:drawablePadding="3dp"
+        android:drawableTint="@color/black"
+        android:hint="Enter Food Name"
+        android:paddingStart="9dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_foodDesc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_foodName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Food Description"
+        android:textColorHint="@color/black"
+        android:background="@drawable/custom_shape"
+        android:paddingStart="9dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_foodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_foodDesc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Food Price (in $)"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:paddingStart="9dp"
+        android:background="@drawable/custom_shape"
+        android:textColorHint="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_addFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_foodPrice"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/light_yellow"
+        android:text="Create"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
